@@ -1,4 +1,4 @@
-# Font-End Web Dev - Accordion Card
+# Font End Web Dev - Accordion Card
 
 This is front-end development project aimed to build a modern-looking, animated
 accordion acard using **HTML**, **SCSS** and **JavaScript** for mobile, tablet
