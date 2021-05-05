@@ -23,6 +23,10 @@
       font-weight: 700;
       color: $veryDarkDesaturatedBlue;
 
+      &:hover {
+        color: $softRed;
+      }
+
       &::after {
         transform: rotate(180deg);
       }
