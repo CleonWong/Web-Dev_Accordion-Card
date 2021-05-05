@@ -1,0 +1,99 @@
+// Default styles are for desktop
+
+.card {
+  display: flex;
+  position: relative;
+  background-color: $white;
+  border-radius: 2rem;
+  max-width: 56rem;
+  margin: 7rem auto;
+  height: auto;
+  // align-items: center;
+
+  @include breakpoint-down(medium) {
+    margin: 9rem 1.5rem;
+    flex-direction: column;
+  }
+
+  &__boxgraphic {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-48%, -27%);
+    z-index: 1;
+    width: 11rem;
+    height: auto;
+
+    @include breakpoint-down(medium) {
+      display: none;
+    }
+  }
+  &__image {
+    flex: 1;
+    order: 1;
+    background-image: url("../images/bg-pattern-desktop.svg");
+    background-size: 220%;
+    background-repeat: no-repeat;
+    background-position: 117% 70%;
+    padding-right: 1rem;
+    // For the woman-online vector
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: hidden;
+
+    @include breakpoint-down(medium) {
+      max-height: 7rem;
+      flex-direction: column;
+      flex: 0.5;
+      order: 1;
+      background-image: url("../images/bg-pattern-mobile.svg");
+      background-size: 14.5rem;
+      background-repeat: no-repeat;
+      background-position: center top;
+      padding: 0px;
+      overflow: visible;
+    }
+
+    .woman_desktop {
+      width: 100%;
+      height: auto;
+      max-width: 25rem;
+      transform: translateX(-4rem);
+
+      @include breakpoint-down(medium) {
+        display: none;
+      }
+    }
+
+    .woman_mobile {
+      display: none;
+      // position: absolute;
+
+      @include breakpoint-down(medium) {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: 16.5rem;
+        transform: translateX(-5%) translateY(-55%);
+      }
+    }
+  }
+
+  &__text {
+    flex: 1;
+    order: 2;
+    padding: 4.5rem 3rem 4.5rem 1.5rem;
+
+    @include breakpoint-down(medium) {
+      flex: 1;
+      order: 2;
+      padding: 1.5rem;
+
+      h1 {
+        text-align: center;
+      }
+    }
+  }
+}

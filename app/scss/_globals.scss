@@ -1,0 +1,92 @@
+// General html and body styles
+// ----------------------------
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+// To inherit that html {box-sizing: border-box} to all elements.
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: $bodyFontSize;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $darkGrayishBlue;
+  overflow-x: hidden;
+  background: linear-gradient($softViolet, $softBlue);
+  background-repeat: no-repeat;
+}
+
+// Text styles
+// -----------
+h1,
+h2,
+h3 {
+  line-height: 1.15;
+  margin-top: 0px;
+}
+
+h1 {
+  font-size: $h1FontSize;
+  font-weight: 700;
+  color: $veryDarkDesaturatedBlue;
+}
+
+h2 {
+  font-size: $h2FontSize;
+  font-weight: 700;
+  color: $veryDarkDesaturatedBlue;
+}
+
+h3 {
+  font-size: $h3FontSize;
+  font-weight: 400;
+  color: $veryDarkGrayishBlue;
+}
+
+p {
+  font-size: $bodyFontSize;
+  font-weight: 400;
+  color: $darkGrayishBlue;
+}
+
+// Button style
+// ------------
+button {
+  border: none;
+  background: transparent;
+  padding: 0px;
+  line-height: 1.15;
+  margin-top: 0px;
+  font-size: $h3FontSize;
+  font-weight: 400;
+  color: $veryDarkGrayishBlue;
+  font-family: "Kumbh Sans", sans-serif;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+// // Container for card
+// // ------------------
+// .container {
+//   max-width: 55rem;
+//   margin: auto;
+
+//   &--paddingAll {
+//     padding-top: 4.375rem;
+//     padding-right: 1.5rem;
+//     padding-bottom: 4.375rem;
+//     padding-left: 1.5rem;
+//   }
+// }
