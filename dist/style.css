@@ -91,6 +91,12 @@ button:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+}
+
+.accordion__question:hover {
+  color: #f47c57;
 }
 
 .accordion__question.open {
@@ -144,6 +150,10 @@ button:hover {
   margin-bottom: 1rem;
 }
 
+.accordion__content:hover {
+  color: #f47c57;
+}
+
 .card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -154,6 +164,8 @@ button:hover {
   max-width: 56rem;
   margin: 7rem auto;
   height: auto;
+  -webkit-box-shadow: 0px 32px 39px rgba(0, 0, 0, 0.24);
+          box-shadow: 0px 32px 39px rgba(0, 0, 0, 0.24);
 }
 
 @media (max-width: 63.9375em) {

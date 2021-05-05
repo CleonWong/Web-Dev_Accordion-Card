@@ -12,6 +12,11 @@
     margin-bottom: 1rem;
     display: flex;
     justify-content: space-between;
+    transition: color 300ms ease-in-out;
+
+    &:hover {
+      color: $softRed;
+    }
 
     &.open {
       // Add class open to accordion__question when it is open.
@@ -56,5 +61,9 @@
   }
   &__content {
     margin-bottom: 1rem;
+
+    &:hover {
+      color: $softRed;
+    }
   }
 }
